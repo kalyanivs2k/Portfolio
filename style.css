@@ -1,0 +1,257 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #414141;
+    font-weight: 750;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .hero-section h1 {
+    font-size: 48px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 20px;
+    color: #666;
+  }
+
+  /* About Section */
+  .about-section {
+    padding: 10px 10px 10px 10px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .about-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  .about-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .about-text {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      text-align: center;
+    }
+  
+    .about-text {
+      padding-left: 40px;
+    }
+  }
+
+  /* Skills Section */
+  .skills-section {
+    padding: 10px 10px 10px 10px;
+    max-width: 1000px;
+    margin: auto;
+    }
+  
+  .skills-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+  }
+
+  .skill-category {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+  }
+
+  .programming-languages h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: maroon;
+    align-items: right;
+  }
+  
+  .python-logo{
+    width: 100px;
+    height: 60px;
+  }
+
+  .cpp-logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .c-logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .java-logo{
+    width: 45px;
+    height: 75px;
+  }
+
+  .R-logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .go-logo{
+    width: 75px;
+    height: 45px;
+  }
+
+.lang-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.lang-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang-col img {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+  /* Experience Section */
+  .experience-section {
+    padding: 10px 10px 10px 10px;
+    max-width: 1000px;
+    margin: auto;
+    }
+  
+  .experience-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+  }
+
+  /* Projects Section */
+  .projects-section {
+    padding: 10px 10px 10px 10px;
+    max-width: 1000px;
+    margin: auto;
+    }
+  
+  .projects-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+  }
+
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      text-align: center;
+    }
+  
+    .about-text {
+      padding-left: 40px;
+    }
+  }

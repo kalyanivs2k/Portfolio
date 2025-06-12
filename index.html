@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyani Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+     <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="Logo.png" alt="Kalyani" class="logo-img"/>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#publication">Publication</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+     </header>
+    
+    <!-- HERO SECTION -->
+     <section id="home" class="hero-section">
+        <h1>Kalyani Vinayagam Sivasundari</h1>
+        <p class="tagline">
+            <span id="role-text">I'm interested in</span>
+        </p>
+     </section>
+
+     <script>
+        const roles = ["Machine Learning Engineer", "Software Developer", "Data Analyst"];
+        const roleText = document.getElementById("role-text");
+        let index = 0;
+      
+        setInterval(() => {
+          roleText.style.opacity = 0;
+      
+          setTimeout(() => {
+            index = (index + 1) % roles.length;
+            roleText.textContent = roles[index];
+            roleText.style.opacity = 1;
+          }, 500); // Matches the CSS transition time
+        }, 2500); // Change role every 2.5 seconds
+     </script>
+    
+    <!-- ABOUT SECTION -->
+     <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <img src="Profile.jpg" alt="Kalyani" class="profile-img" />
+            <p class="about-text">
+                <br />Hey, I’m Kalyani — a curious, code-loving problem solver who lives for building cool things with tech! Whether it’s training ML models, crafting intelligent software, or diving deep into data, I bring energy, creativity, and a “let’s make this awesome” attitude to every project. I thrive on turning big ideas into real, working systems — fast, clean, and smart. <br /> <br /> <strong>Let’s build the future, one line of code at a time!</strong>
+            </p>
+        </div>
+     </section>
+    
+    <!-- SKILLS SECTION -->
+     <section id="skills" class="skills-section">
+        <h1>Skills</h1>
+        <div class="skill-category">
+            <div class="programming-languages">
+                <h3>Programming Languages</h3>
+                <div class="lang-row">
+                    <!-- Python Column -->
+                     <div class="lang-col">
+                        <img src="python.png" alt="Python" class="python-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%; background-color: #4CAF50;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- C++ Column -->
+                     <div class="lang-col">
+                        <img src="cpp.png" alt="C++" class="cpp-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%; background-color: #4CAF50;"></div>
+                        </div>
+                    </div>
+
+                    <!-- C Column -->
+                     <div class="lang-col">
+                        <img src="c.png" alt="C" class="c-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%; background-color: #4CAF50;"></div>
+                        </div>
+                    </div>
+
+                    <!-- SQL Column -->
+                     <div class="lang-col">
+                        <img src="sql.png" alt="SQL" class="sql-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%; background-color: #4CAF50;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang-row">
+                    <!-- Java Column -->
+                     <div class="lang-col">
+                        <img src="java.png" alt="Java" class="java-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%; background-color: #2196F3;"></div>
+                        </div>
+                    </div>
+
+                    <!-- R Column -->
+                     <div class="lang-col">
+                        <img src="R.png" alt="R" class="R-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%; background-color: #2196F3;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Go Column -->
+                     <div class="lang-col">
+                        <img src="go.png" alt="Go" class="go-logo" />
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 50%; background-color: #dbf321;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="databases">
+                <h3>Databases</h3>
+            </div>
+            <div class="cloud">
+                <h3>Cloud Platforms</h3>
+            </div>
+            <div class="libraries">
+                <h3>Libraries/Frameworks</h3>
+            </div>
+            <div class="analytic-tools">
+                <h3>Analytic Tools</h3>
+            </div>
+            <div class="llm">
+                <h3>LLMs</h3>
+            </div>
+            <div class="tools">
+                <h3>Tools</h3>
+            </div>
+            <div class="environments">
+                <h3>Environments</h3>
+            </div>
+        </div>
+     </section>
+
+    <!-- EXPERIENCE SECTION -->
+     <section id="experience" class="experience-section">
+        <div class="experience">
+            <h1>Experience</h1>
+            
+        </div>
+     </section>
+
+    <!-- PROJECTS SECTION -->
+     <section id="projects" class="projects-section">
+        <div class="projects">
+            <h1>Projects</h1>
+        </div>
+     </section>
+</body>
+</html>
